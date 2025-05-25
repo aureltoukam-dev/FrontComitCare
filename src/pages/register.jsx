@@ -24,9 +24,9 @@ const Register = () => {
   // };
 
   return (
-    <div >
+    <section  className="register-bg"> 
       <form className="register-form" >
-        <h2>Inscription</h2>
+        <h2 >Inscription</h2>
         <div className="form-group">
           <label htmlFor="name">Nom</label>
           <input
@@ -90,7 +90,7 @@ const Register = () => {
           </span> */}
         </p>
       </form>
-    </div>
+    </section>
   );
 };
 

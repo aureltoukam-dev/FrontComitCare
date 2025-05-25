@@ -3,6 +3,9 @@ import '../style/home.css';
 import Navbar from "../component/navbar";
 import Actuality from "../component/actuality";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Bannier from "../component/bannier";
+import Footer from "../component/footer";
+import Contact from "../component/contact";
 
 const actualityList = [
   {
@@ -42,26 +45,34 @@ const Home = () => {
   const next = () => setCurrent((current + 1) % actualityList.length);
 
   return (
-    <div className="home-container">
+    <section className="home-container">
       <Navbar />
+      <Bannier/>
+
+
       <div className="home">
-        <h1 className="home-title">Bienvenue sur Commitcare</h1>
+
+
         <div className="home-main-section">
           <div className="home-content">
+            <h2> QUI SOMME NOUS</h2>
             <p>
               Nous sommes une plateforme de mise en relation entre les comités d'entreprise et les entreprises de services.
             </p>
             <div className="home-buttons">
-              <button className="connexion">Connexion</button>
-              <button className="inscription">Inscription</button>
+              <a href="/connexion" className="connexion" >Connexion</a>
+              <a href="/register" className="inscription">Inscription</a>
             </div>
           </div>
           <div className="home-image">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Accueil" />
           </div>
         </div>
+
+
         <div>
           <h2>Actualité</h2>
+          <p> suivez les actualites de sante avec nous</p>
         </div>
         <div className="actuality-carousel">
           <button className="carousel-arrow" onClick={prev}>
@@ -72,9 +83,13 @@ const Home = () => {
             <ChevronRight size={32} />
           </button>
         </div>
-        <div className="">
-          <h2>Conseils  sante</h2>
-                  <div className="actuality-carousel">
+
+
+        <div>
+          <h2>Conseil de sante</h2>
+          <p> profitez de nos conseils de specialiste</p>
+        </div>
+        <div className="actuality-carousel">
           <button className="carousel-arrow" onClick={prev}>
             <ChevronLeft size={32} />
           </button>
@@ -84,9 +99,14 @@ const Home = () => {
           </button>
         </div>
 
-        </div>
+
+
+        
       </div>
-    </div>
+      <Contact/>
+
+    </section>
+    
   );
 };
 

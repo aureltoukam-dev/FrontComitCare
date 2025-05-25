@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/actuality.css";
 
-const Actuality = ({ img, text }) => {
+const Actuality = ({ img, text ,lien}) => {
   return (
     <div className="actuality-container">
       <img
@@ -11,7 +11,7 @@ const Actuality = ({ img, text }) => {
       />
       <div className="actuality-content">
         <p className="actuality-text">{text}</p>
-        <button className="actuality-btn">Voir plus</button>
+        <a href= {lien} className="actuality-btn">Voir plus</a>
       </div>
     </div>
   );

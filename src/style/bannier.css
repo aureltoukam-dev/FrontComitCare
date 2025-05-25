@@ -1,0 +1,39 @@
+.bannier-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.bannier-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.bannier-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  color: #fff;
+  z-index: 2;
+}
+
+.bannier-text h2 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+}
+
+.bannier-text p {
+  font-size: 1.2rem;
+  margin: 0;
+}

@@ -12,15 +12,15 @@ const Navbar = () => {
         </li>
         <li className="navbar-item">
           <User className="icon" />
-          <span>Profil</span>
+          <span>Dossier</span>
         </li>
         <li className="navbar-item">
           <Settings className="icon" />
-          <span>Paramètres</span>
+          <span>Rappels</span>
         </li>
         <li className="navbar-item">
           <Info className="icon" />
-          <span>À propos</span>
+          <span>profil</span>
         </li>
         <li className="navbar-item">
           <LogOut className="icon" />

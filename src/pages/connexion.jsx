@@ -22,34 +22,30 @@ const Connexion = () => {
   // };
 
   return (
-    <div className="  connexion-page">
-      <form className="connexion-form">
-        <h1  >Connexion</h1>  
-        <div className="form-group">
-            <Mail className="icon" />
-          <input type="email" id="email" name="email" placeholder="email" required  />
-        </div>
+    <div className="connexion-bg">
+    <form className="connexion-form">
+      <h1>Connexion</h1>
+      <div className="form-group">
+        <Mail className="icon" />
+        <input type="email" id="email" name="email" placeholder="email" required />
+      </div>
+      <div className="form-group">
+        <Lock className="icon" />
+        <input type="password" id="password" name="password" placeholder="password" required />
+      </div>
+      <div className="form-group">
+        <button type="submit">Se connecter</button>
+      </div>
+      <div className="form-group">
+        <p>Pas encore de compte ? <a href="/register">Inscrivez-vous</a></p>
+      </div>
+      <div className="form-group">
+        <p>Mot de passe oublié ? <a href="/reset-password">Réinitialiser</a></p>
+      </div>
+    </form>
+  </div>
 
-
-        <div className="form-group">
-          <Lock className="icon" />
-          <input type="password" id="password" name="password" placeholder="password" required />
-        </div>
-
-
-        <div className="form-group">
-          <button type="submit">Se connecter</button>
-        </div>
-
-        <div className="form-group">
-          <p>Pas encore de compte ? <a href="/register">Inscrivez-vous</a></p>
-        </div>
-        <div className="form-group">
-          <p>Mot de passe oublié ? <a href="/reset-password">Réinitialiser</a></p>
-        </div>
-        </form>
-    </div>
-  );
+);
 };
 
 export default Connexion;
