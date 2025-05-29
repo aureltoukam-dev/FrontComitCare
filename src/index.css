@@ -5,12 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-color: #d4f5d4; /* Vert médical */
-
-
+  background-color: #d4f5d4; /* Vert médical */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 32px auto 0 auto;
+  min-height: 80vh;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+@media (max-width: 900px) {
+  .app-container {
+    width: 98vw;
+    padding: 16px 4vw;
+    border-radius: 10px;
+  }
 }
