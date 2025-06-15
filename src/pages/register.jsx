@@ -61,7 +61,7 @@ const Register = () => {
     />
   </div>
   <div className="form-group">
-    <label htmlFor="residence">Résidence</label>
+    {/* <label htmlFor="residence">Résidence</label>
     <input
       type="text"
       id="residence"
@@ -69,7 +69,7 @@ const Register = () => {
       value={formData.residence}
       onChange={handleChange}
       required
-    />
+    /> */}
   </div>
   <div className="form-group">
     <label htmlFor="phone">Téléphone</label>

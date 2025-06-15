@@ -10,17 +10,22 @@ const membresInit = [
 
 const sections = [
   {
-    titre: "Santé",
+    titre: "Facteurs socio-economiques",
     items: ["Consultations", "Vaccins"]
   },
   {
-    titre: "Documents",
+    titre: "Environnement physique",
     items: ["Ordonnances", "Analyses", "Imagerie"]
   },
   {
-    titre: "Suivi",
+    titre: "Habitudes de sante",
+    items: ["Paramètres", "Rappels"]
+  },
+    {
+    titre: "Soins de sante",
     items: ["Paramètres", "Rappels"]
   }
+
 ];
 
 const Dossier = () => {
@@ -35,7 +40,7 @@ const Dossier = () => {
     <div className="dossier-container">
       {/* Section gauche */}
       <aside className="dossier-sidebar">
-        <h3>Membres</h3>
+        <h3>Dossier</h3>
         <ul>
           {membres.map(m => (
             <li key={m.id} className="membre-item">
@@ -63,6 +68,8 @@ const Dossier = () => {
             </div>
           </div>
         ))}
+
+        
       </main>
     </div>
   );

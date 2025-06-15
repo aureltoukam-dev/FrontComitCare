@@ -93,7 +93,7 @@ const Profil = () => {
             />
           </label>
           <label>
-            Téléphone :
+            Téléphone(whatsapp) :
             <input
               type="tel"
               name="phone"
@@ -103,7 +103,7 @@ const Profil = () => {
             />
           </label>
           <label>
-            Âge :
+            Année de naissance :
             <input
               type="number"
               name="age"
@@ -114,7 +114,7 @@ const Profil = () => {
             />
           </label>
           <label>
-            Adresse :
+            Lieu de residence :
             <input
               type="text"
               name="adresse"

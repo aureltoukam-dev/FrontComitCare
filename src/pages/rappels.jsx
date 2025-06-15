@@ -71,7 +71,7 @@ const Rappels = () => {
           className={selected === "rdv" ? "active" : ""}
           onClick={() => setSelected("rdv")}
         >
-          RDV
+          JOURNALIER
         </button>
         <button
           className={selected === "medicaments" ? "active" : ""}
